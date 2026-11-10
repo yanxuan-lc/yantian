@@ -1,0 +1,53 @@
+{
+  "name": "@yanxuan.lc/yantian",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "BaZi, Qi Men Dun Jia and Western astrology charts for YaoGuang agents",
+  "license": "MIT",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "files": [
+    "dist",
+    "ui",
+    "THIRD_PARTY_NOTICES.md"
+  ],
+  "scripts": {
+    "build": "tsc && vite build",
+    "prepack": "tsc && vite build",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit && tsc --noEmit -p tsconfig.ui.json"
+  },
+  "dependencies": {
+    "lunar-typescript": "1.8.7",
+    "astronomy-engine": "2.1.19"
+  },
+  "peerDependencies": {
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.5.10",
+    "@eum-agent/plugin": "^1.1.0",
+    "@types/node": "26.3.0",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.5",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "typescript": "7.0.2",
+    "vite": "8.2.2",
+    "vitest": "4.1.11",
+    "zod": "4.4.3"
+  },
+  "yaoguang": {
+    "kind": "extension",
+    "description": {
+      "en-US": "BaZi, Qi Men Dun Jia and Western astrology charts for YaoGuang agents",
+      "zh-CN": "八字、奇门遁甲与西洋占星的排盘与推演"
+    },
+    "dependencies": {}
+  },
+  "packageManager": "pnpm@11.13.1",
+  "engines": {
+    "node": ">=22"
+  }
+}

@@ -1,0 +1,8 @@
+# Single-package project; this file only carries pnpm settings.
+packages: []
+
+# The plugin contract tracks the local YaoGuang source until its next release; zod resolves to
+# the contract's own copy so schemas are shared with the host.
+overrides:
+  '@eum-agent/plugin': link:../../yaoguang/packages/core/plugin
+  zod: link:../../yaoguang/packages/core/plugin/node_modules/zod

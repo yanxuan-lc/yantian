@@ -1,0 +1,14 @@
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+*.tgz
+.DS_Store
+.env
+.claude/
+.playwright-mcp/
+/tmp/
+
+# Built browser module: produced by `build`, carried into the tarball by `files`.
+ui/
+dist-pack/
